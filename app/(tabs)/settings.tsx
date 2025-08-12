@@ -1,13 +1,11 @@
-import { Text, View } from 'react-native';
+import { Text, View } from "react-native";
 
-
-export default function HomeScreen() {
+export default function Settings () {
   return (
     <View className="flex-1 items-center justify-center bg-white">
       <Text className="text-3xl font-bold text-blue-500">
-        Welcome to Nativewind!
+        Settings
       </Text>
     </View>
   );
 }
-
