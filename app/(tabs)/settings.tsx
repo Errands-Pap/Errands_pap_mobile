@@ -1,11 +1,10 @@
-import { Text, View } from "react-native";
+import { ThemedText } from "@/components/ThemedText";
+import { ThemedView } from "@/components/ThemedView";
 
 export default function Settings () {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-3xl font-bold text-blue-500">
-        Settings
-      </Text>
-    </View>
+    <ThemedView className="flex-1 items-center justify-center">
+      <ThemedText className="text-[#0b1220]">Settings</ThemedText>
+    </ThemedView>
   );
 }
