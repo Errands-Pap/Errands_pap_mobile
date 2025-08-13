@@ -1,10 +1,9 @@
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
-
+import ThemedText from "@/theme/ThemedText";
+import { ThemedView } from "@/theme/ThemedViews";
 
 export default function HomeScreen() {
   return (
-    <ThemedView className="flex-1 items-center justify-center bg-white">
+    <ThemedView className="flex-1 items-center justify-center">
       <ThemedText>Home</ThemedText>
     </ThemedView>
   );
