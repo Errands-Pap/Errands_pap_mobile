@@ -119,7 +119,7 @@ const FormInput = forwardRef<TextInput, Props>(function FormInput(
 
         <TextInput
           ref={ref}
-          className={["flex-1 p-4 text-sm text-[#06050f] dark:text-dark-text", inputClassName].join(
+          className={["flex-1 p-4 text-base text-[#06050f] dark:text-dark-text", inputClassName].join(
             " "
           )}
           placeholderTextColor={placeholderTextColor}
