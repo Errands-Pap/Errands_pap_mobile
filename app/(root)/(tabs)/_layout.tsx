@@ -3,10 +3,10 @@ import React from 'react';
 import { Platform } from 'react-native';
 
 // import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import ThemedIcon from '@/theme/ThemedIcon';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -22,6 +22,11 @@ export default function TabLayout() {
           ios: {
             // Use a transparent background on iOS to show the blur effect
             position: 'absolute',
+            backgroundColor: 'transparent',
+          },
+          android: {
+            position: 'absolute',
+            backgroundColor: 'transparent',
           },
           default: {},
         }),
@@ -30,21 +35,28 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color }) => <ThemedIcon size={20} name="home-7-fill" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="new-order"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'New Order',
+          tabBarIcon: ({ color }) => <ThemedIcon size={20} name="add-large-fill" color={color} />,
         }}
       />
       <Tabs.Screen 
-        name='settings'
+        name='cart'
         options={{
-          title: 'Settings',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="gearshape.fill" color={color} />,
+          title: 'Cart',
+          tabBarIcon: ({ color }) => <ThemedIcon size={20} name="shopping-cart-fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color }) => <ThemedIcon size={20} name="user-3-fill" color={color} />,
         }}
       />
     </Tabs>
