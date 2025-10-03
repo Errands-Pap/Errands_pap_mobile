@@ -38,7 +38,7 @@ export default function SignIn() {
 
         <ThemedView className="gap-6 mb-10">
           <ButtonGoogle text="Continue with Google" />
-          <ButtonPrimary text="Login" />
+          <ButtonPrimary text="Login" onPress={() => router.push("/(root)/(tabs)")} />
         </ThemedView>
 
         <ThemedView className="flex-row items-center justify-center gap-2">

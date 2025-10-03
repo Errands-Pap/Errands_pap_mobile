@@ -1,10 +1,10 @@
 import ThemedText from "@/theme/ThemedText";
 import { ThemedView } from "@/theme/ThemedViews";
 
-export default function Settings () {
+export default function Cart () {
   return (
     <ThemedView className="flex-1 items-center justify-center">
-      <ThemedText className="text-[#0b1220]">Settings</ThemedText>
+      <ThemedText>Cart</ThemedText>
     </ThemedView>
   );
 }
